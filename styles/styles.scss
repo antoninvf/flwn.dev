@@ -6,28 +6,9 @@ p {
     margin: 0;
 }
 
-.red-bg {
-    background-image: linear-gradient(135deg, #da2c2c 40%, #d1095c 60%);
-}
-
-.middle {
-    top: 0;
-    left: 0;
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
 a {
     text-decoration: none;
     margin: 0;
-}
-
-.dropShadow {
-    filter: drop-shadow(0 0 0.5vh #000000);
 }
 
 h1 {
@@ -42,6 +23,29 @@ nav {
     z-index: 999;
 }
 
+.gradientBg {
+    background-image: linear-gradient(135deg, #da2c2c 40%, #d1095c 60%);
+}
+
+.redColor {
+    color: #da2c2c;
+}
+
+.middle {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropShadow {
+    filter: drop-shadow(0 0 0.5vh #000000);
+}
+
 .omoriBgDark {
     top: 0;
     left: 0;
@@ -49,7 +53,7 @@ nav {
     z-index: -99;
     width: 100%;
     height: 100%;
-    content: url("https://gangnamstyle.dev/omoriBgDark.png");
+    content: url("/img/omoriBgDark.png");
     object-fit: cover;
     filter: brightness(0.3);
 
@@ -57,4 +61,31 @@ nav {
 
 .titleText {
     font-size: 10vh;
+}
+
+.aboutBox {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.aboutBgBox {
+    width: 75%;
+    height: fit-content;
+}
+
+.aboutText {
+    font-size: 2.5vh;
+}
+
+.bottomAboutBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: 0;
 }
