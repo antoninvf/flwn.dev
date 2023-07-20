@@ -1,9 +1,0 @@
-{
-    "editor.formatOnSave": true,
-    "eslint.format.enable": true,
-    "editor.defaultFormatter": "mohd-akram.vscode-html-format",
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "html.format.wrapLineLength": 0,
-}
