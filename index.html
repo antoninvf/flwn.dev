@@ -5,7 +5,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>gangnamstyle.dev</title>
-    <meta name="description" content="">
+    <meta name="robots" content="noindex">
+
+    <meta name="theme-color" content="#E91E63">
+    <meta content="gangnamstyle.dev" property="og:site_name">
+    <meta content="Flowyan's gangnamstyle.dev" property="og:title">
+    <meta content="My personal website." property="og:description">
+    <meta content="https://cdn.gangnamstyle.dev/media/gangnamstyle.gif" property="og:image">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -16,30 +28,99 @@
 </head>
 
 <body>
-    <div class="d-flex justify-content-center vw-100 main">
+    <div class="d-flex align-items-center vw-100 main flex-column">
+        <h1>GANGNAMSTYLE.DEV</h1>
         <div class="middle">
             <div class="main-section">
-                <div class="module firstbox">
-                    <p class="titletext">WELCOME TO GANGNAMSTYLE.DEV</p>
+                <div class="module">
+                    <h2>WELCOME TO GANGNAMSTYLE.DEV</h2>
                     <p>Hi, I'm Flowyan and this is my website.</p>
                     <p>I host several of my personal projects and stuff that I'm currently working on.</p>
-                    <p> Some things that I have on here currently is a media website with funny pictures, a website for
+                    <p>Some things that I have on here currently is a media website with funny pictures, a website for
                         my friend group and more.</p>
+                    <p>Also this website is still a work in progress.<br>I started coding it at like 3 AM and finished 8 AM haha.</p>
+                </div>
+                <div class="module">
+                    <h2>SOME THINGS I MADE</h2>
+                    <p>Here's a list of some stuff I made. Some of it's useful, some of it's not.</p>
+                    <div>
+                        <h3>> This website <small>(crazy i know)</small></h3>
+                        <p>Yeah, I made this website. It's pretty cool. I coded most of it, sometimes using Bootstrap
+                            for margins so I can space stuff out easily. The fonts I use are Alagard for the titles,
+                            except the main title, and Pixellari for the normal text and main title. I'm still not sure
+                            if I'm going to stick with these fonts as they might be harder to read than some other
+                            fonts.</p>
+                    </div>
+                    <div>
+                        <a href="https://gangnamstyle.dev/grades" target="_blank">
+                            <h3>> Grade calculator</h3>
+                        </a>
+                        <p>My grades calculator is a tool that I made to calculate my grades to see if I'm going to fail
+                            or not. It's pretty simple, you just
+                            enter your grades with weights and it calculates your average grade. Our school grading
+                            system uses
+                            percentages and weights, so it's only useful for that.</p>
+                    </div>
+                    <div>
+                        <a href="https://modrinth.com/mod/maxwell-the-placeable-cat" target="_blank">
+                            <h3>> Maxwell in Minecraft mod</h3>
+                        </a>
+                        <p>I made a mod for Minecraft that adds Maxwell the cat. This was when it was really popular so
+                            I literally hopped on the hype train and got like 3K downloads lol. You can check out the
+                            source code <a href="https://github.com/antoninvf/PlaceableMaxwellForge" target="_blank"
+                                class="clickable">right here</a>.</p>
+                    </div>
+                    <div>
+                        <h3>> Discord bot in C# <small>(currently private)</small></h3>
+                        <p>My Discord bot that is coded in C# using Discord.NET. It's currently private and probably
+                            will stay like that for some time. It's a Discord bot mostly made for me and my friend group
+                            to mess about with. It's got a basic leveling system, connected to a MySQL database, has
+                            some item and inventory features and I plan to connect to a web interface, where you could
+                            see your money, items and etc.</p>
+                    </div>
+                </div>
+                <div class="module">
+                    <h2>PLANS FOR THE FUTURE <small>(of this website)</small></h2>
+                    <p>I have a couple of ideas what to add to this website.</p>
+                    <ul>
+                        <li>Different fonts, as I want more readable text</li>
+                        <li>Better background. As much as I like this background, I want to see if I can find a better one</li>
+                        <li>Maybe a blog, though idk if anyone would read it haha</li>
+                    </ul>
                 </div>
             </div>
             <div class="side-section">
-                <div class="module firstbox">
-                    <p class="titletext">STUFF</p>
-                    <div class="d-flex flex-column gap-1">
-                        <a href="https://gangnamstyle.dev">Home</a>
-                        <a href="https://gangnamstyle.dev">More about me</a>
-                        <a href="https://gangnamstyle.dev">Credits</a>
+                <div class="module">
+                    <h2>STUFF</h2>
+                    <div class="d-flex flex-column">
+                        <a href="https://gangnamstyle.dev" class="activelink">> Home</a>
+                        <a href="/about.html">> More about me</a>
+                        <a href="#" class="disabled" title="Work in progress!">> Media</a>
+                        <a href="https://cdn.gangnamstyle.dev">> CDN</a>
+                        <a href="/credits.html">> Credits</a>
+                        <a href="https://gangnamstyle.dev/grades" target="_blank">> Grade calculator</a>
                     </div>
-                    <p class="titletext mt-3">PROJECTS</p>
-                    <a href="https://gangnamstyle.dev">balls</a>
-                    <p class="titletext mt-3">FRIENDS</p>
-                    <a href="https://gangnamstyle.dev">balls</a>
-
+                    <h2 class="mt-2">SOCIALS</h2>
+                    <div class="d-flex flex-column">
+                        <a href="https://www.github.com/antoninvf" target="_blank">> GitHub</a>
+                        <a href="https://twitter.com/flowyan_" target="_blank">> Twitter</a>
+                        <a href="https://www.youtube.com/flowyan" target="_blank">> YouTube</a>
+                    </div>
+                    <h2 class="mt-2">FRIENDS</h2>
+                    <div class="d-flex flex-column">
+                        <a href="https://chutoy.gangnamstyle.dev/" target="_blank">> Chutoy's emporium</a>
+                        <a href="https://basil.florist" target="_blank">> basil.florist</a>
+                        <a href="https://familyguyhouse.com/" target="_blank">> familyguyhouse.com</a>
+                    </div>
+                </div>
+                <div class="module">
+                    <h2>GANGNAM STYLE</h2>
+                    <img src="/images/gangnamstyle.gif" alt="">
+                </div>
+                <div class="module">
+                    <h2>idk what to put here</h2>
+                    <p>any ideas?</p>
+                    <p>then contact me on like discord or smthing idk lol</p>
                 </div>
             </div>
         </div>
