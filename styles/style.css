@@ -137,4 +137,17 @@ h3 {
   height: -moz-fit-content;
   height: fit-content;
   box-shadow: 0 0 0.5vh 0.1vh #333;
+}
+
+.musicbox-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.3vh;
+  border: 0.3vh solid #333;
+  box-shadow: 0 0 0.5vh 0.1vh #333;
+}
+
+.musicbox-img:hover {
+  border: 0.3vh solid #ff80ff;
+  box-shadow: 0 0 0.5vh 0.1vh #ff80ff;
 }/*# sourceMappingURL=style.css.map */
