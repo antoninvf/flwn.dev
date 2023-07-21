@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Alagard";
+  src: url("/fonts/alagard.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pixellari";
+  src: url("/fonts/Pixellari.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "VCRosdNEUE";
+  src: url("/fonts/VCRosdNEUE.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  background-color: rgb(2, 2, 2);
+  background-image: url("/images/stars.gif");
+  background-size: 15%;
+  color: white;
+  font-family: Pixellari;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+a:hover {
+  color: #ff80ff;
+  text-decoration: underline;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  gap: 1vh;
+  width: 50%;
+  height: 100%;
+}
+
+.titletext {
+  font-size: 3vh;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Alagard;
+  color: #ff80ff;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  width: 100%;
+}
+
+.side-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  width: 35%;
+}
+
+.module {
+  border: 0.3vh solid #333;
+  border-radius: 0.3vh;
+  padding: 2vh;
+  background-color: black;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.firstbox {
+  margin-top: 5vh;
+}/*# sourceMappingURL=style.css.map */
