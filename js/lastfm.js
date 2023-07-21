@@ -1,10 +1,3 @@
-function isElementOverflowing(element) {
-    var overflowX = element.offsetWidth < element.scrollWidth,
-        overflowY = element.offsetHeight < element.scrollHeight;
-
-    return (overflowX || overflowY);
-}
-
 // get elements by id
 var title = document.getElementById("musicbox_title");
 var songlink = document.getElementById("musicbox_songlink");
@@ -43,9 +36,7 @@ function main() {
                     minute: "numeric",
                     second: "numeric"
                 });
-                listening.innerHTML = `Last played ${lastPlayedString}`;
-            
-
+                listening.innerHTML = `${lastPlayedString}`;
             }
 
             cover.src = e.image[3]["#text"];
@@ -54,19 +45,7 @@ function main() {
             artist.innerHTML = e.artist["#text"];
             album.innerHTML = e.album["#text"];
 
-            listening.innerHTML = data.status;
             listens.innerHTML = `${data.recenttracks["@attr"].total} listens`;
-
-            // check if text is overflowing
-            if (isElementOverflowing(song)) {
-                song.classList.add("bg-danger");
-            }
-            if (isElementOverflowing(artist)) {
-                artist.classList.add("bg-danger");
-            }
-            if (isElementOverflowing(album)) {
-                album.classList.add("bg-danger");
-            }
         }
     );
 }
