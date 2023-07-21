@@ -52,12 +52,13 @@ function main() {
             }
 
             cover.src = e.image[3]["#text"];
+            songlink.href = e.url;
 
             song.innerHTML = e.name;
             artist.innerHTML = e.artist["#text"];
             album.innerHTML = e.album["#text"];
 
-            listens.innerHTML = `${data.recenttracks["@attr"].total} listens`;
+            listens.innerHTML = `${data.recenttracks["@attr"].total} total listens`;
         }
     );
 }
