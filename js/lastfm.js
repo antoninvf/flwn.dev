@@ -39,16 +39,16 @@ function main() {
 
                 // if the difference is more than a day, show the date
                 if (days > 0) {
-                    lastPlayedString += `${days} day${days > 1 ? "s" : ""} ago.`;
+                    lastPlayedString += `${days} day${days > 1 ? "s" : ""}`;
                 } else if (hours > 0) {
-                    lastPlayedString += `${hours} hour${hours > 1 ? "s" : ""} ago.`;
+                    lastPlayedString += `${hours} hour${hours > 1 ? "s" : ""}`;
                 } else if (minutes > 0) {
-                    lastPlayedString += `${minutes} minute${minutes > 1 ? "s" : ""} ago.`;
+                    lastPlayedString += `${minutes} minute${minutes > 1 ? "s" : ""}`;
                 } else {
-                    lastPlayedString += `${seconds} second${seconds > 1 ? "s" : ""} ago.`;
+                    lastPlayedString += `${seconds} second${seconds > 1 ? "s" : ""}`;
                 }
 
-                listening.innerHTML = `${lastPlayedString}`;
+                listening.innerHTML = `${lastPlayedString} ago`;
             }
 
             cover.src = e.image[3]["#text"];
