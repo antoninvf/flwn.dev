@@ -25,17 +25,29 @@ function main() {
 
                 // get the last played time
                 var lastPlayed = new Date(e.date.uts * 1000);
-                var lastPlayedString = lastPlayed.toLocaleString("en-US", {
-                    // get the time in the user's
-                    timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-                    weekday: "long",
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                    hour: "numeric",
-                    minute: "numeric",
-                    second: "numeric"
-                });
+                var now = new Date();
+                var lastPlayedString = "";
+
+                // get the difference between now and the last played time
+                var diff = Math.abs(now - lastPlayed) / 1000;
+
+                // get the days, hours, minutes, and seconds
+                var days = Math.floor(diff / 86400);
+                var hours = Math.floor(diff / 3600) % 24;
+                var minutes = Math.floor(diff / 60) % 60;
+                var seconds = Math.floor(diff % 60);
+
+                // if the difference is more than a day, show the date
+                if (days > 0) {
+                    lastPlayedString += `${days} day${days > 1 ? "s" : ""} ago.`;
+                } else if (hours > 0) {
+                    lastPlayedString += `${hours} hour${hours > 1 ? "s" : ""} ago.`;
+                } else if (minutes > 0) {
+                    lastPlayedString += `${minutes} minute${minutes > 1 ? "s" : ""} ago.`;
+                } else {
+                    lastPlayedString += `${seconds} second${seconds > 1 ? "s" : ""} ago.`;
+                }
+
                 listening.innerHTML = `${lastPlayedString}`;
             }
 
@@ -50,4 +62,7 @@ function main() {
     );
 }
 
-window.onload = main();
+window.onload = function() {
+    main();
+    setInterval(main, 15000);
+}
