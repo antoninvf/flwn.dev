@@ -16,4 +16,4 @@ jobs:
       - name: Pull repository from GitHub
         run: |
           cd C:\inetpub\wwwroot\gangnamstyle.dev
-          C:\WINDOWS\system32\cmd.exe /C git pull
+          git pull
