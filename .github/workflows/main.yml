@@ -1,21 +1,18 @@
 name: git pull on PETER-PRAGUE
 
-on: 
+on:
   push:
     branches:
       - "main"
   workflow_dispatch:
 
 jobs:
-  build-and-deploy:
-
+  pull:
     runs-on: self-hosted
-    
-    steps:
-    - uses: actions/checkout@v3
 
-    - name: Pull repository from GitHub
-      run: |
-        cmd
-        cd C:\inetpub\wwwroot\gangnamstyle.dev
-        git pull
+    steps:
+      - name: Pull repository from GitHub
+        run: |
+          cd C:\inetpub\wwwroot\gangnamstyle.dev
+          git pull
+        shell: cmd
