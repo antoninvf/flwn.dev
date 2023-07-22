@@ -16,4 +16,5 @@ jobs:
       - name: Pull repository from GitHub
         run: |
           cd C:\inetpub\wwwroot\gangnamstyle.dev
+          git config --global --add safe.directory C:/inetpub/wwwroot/gangnamstyle.dev
           git pull
