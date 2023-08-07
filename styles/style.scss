@@ -141,3 +141,24 @@ h3 {
     border: 0.3vh solid $main_color;
     box-shadow: 0 0 0.5vh 0.1vh $main_color;
 }
+
+@media only screen and (max-width: 1000px) {
+    .middle {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .side-section {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 9vw;
+        margin-top: 1vh;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: 2.2vh;
+    }
+}
