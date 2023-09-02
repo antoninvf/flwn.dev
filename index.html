@@ -29,13 +29,12 @@
 
 <body>
     <div class="d-flex align-items-center vw-100 main flex-column">
-        <h1 id="title">GANGNAMSTYLE.DEV</h1>
-        <script src="js/changeTitle.js"></script>
+        <h1 id="replaceName">GANGNAMSTYLE.DEV</h1>
 
         <div class="middle">
             <div class="main-section">
                 <div class="module">
-                    <h2>WELCOME TO GANGNAMSTYLE.DEV</h2>
+                    <h2 id="replaceName">WELCOME TO GANGNAMSTYLE.DEV</h2>
                     <p>Hi, I'm Flowyan and this is my website.</p>
                     <p>I host several of my personal projects and stuff that I'm currently working on.</p>
                     <p>Some things that I have on here currently is a media website with funny pictures, a website for
@@ -94,6 +93,10 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Replace mentions of gangnamstyle.dev with the current window.location.hostname -->
+            <script src="js/changeName.js"></script>
+
             <div class="side-section">
                 <div class="module">
                     <h2>STUFF</h2>
