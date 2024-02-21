@@ -1,4 +1,4 @@
-name: git pull on PETER-PRAGUE
+name: git pull on ZEPHYR
 
 on:
   push:
@@ -15,6 +15,6 @@ jobs:
 
       - name: Pull repository from GitHub
         run: |
-          cd C:\inetpub\wwwroot\gangnamstyle.dev
-          git config --global --add safe.directory C:/inetpub/wwwroot/gangnamstyle.dev
+          cd /var/www/flwn.dev/html
+          git config --global --add safe.directory /var/www/flwn.dev/html
           git pull
