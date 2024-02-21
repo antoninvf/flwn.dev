@@ -110,7 +110,7 @@ h3 {
   display: flex;
   flex-direction: row;
   gap: 1vh;
-  width: 50rem;
+  width: 75vw;
   height: 100%;
   margin-bottom: 5vh;
 }
