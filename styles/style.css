@@ -24,7 +24,7 @@ a {
   text-decoration: none;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 1.8vh;
+  font-size: 1rem;
 }
 
 a:hover {
@@ -37,7 +37,7 @@ a:hover {
   text-decoration: none;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 1.8vh;
+  font-size: 1rem;
 }
 
 .disabled:hover {
@@ -58,7 +58,7 @@ img {
 }
 
 p {
-  font-size: 1.8vh;
+  font-size: 1rem;
   margin-top: 1vh;
   margin-bottom: 1vh;
 }
@@ -66,7 +66,7 @@ p {
 h1 {
   margin-top: 4vh;
   margin-bottom: -1vh;
-  font-size: 10vh;
+  font-size: 5rem;
   font-weight: bold;
   text-transform: uppercase;
   font-family: Pixellari;
@@ -75,7 +75,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.6vh;
+  font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
   font-family: Alagard;
@@ -84,7 +84,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.2vh;
+  font-size: 1.1rem;
   font-weight: bold;
   text-transform: uppercase;
   font-family: Pixellari;
@@ -161,11 +161,14 @@ h3 {
     width: 100%;
   }
   h1 {
-    font-size: 9vw;
-    margin-top: 1vh;
+    font-size: 3rem;
+    margin-top: 0.5rem;
     margin-bottom: 0;
   }
   h2 {
-    font-size: 2.2vh;
+    font-size: 1.5rem;
+  }
+  a {
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
