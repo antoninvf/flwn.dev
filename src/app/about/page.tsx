@@ -2,9 +2,9 @@
 import { Flex, Text, Title } from '@mantine/core';
 import { Module } from '~home';
 import { Logo } from '~home/components/Logo';
-import { NavModule } from '~home/components/NavModule';
 import classes from '~/styles/Content.module.scss';
 import Link from 'next/link';
+import { NavModule } from '../../modules/home/components/NavModule/NavModule';
 
 export default function About() {
 	return (

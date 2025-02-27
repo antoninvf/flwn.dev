@@ -21,13 +21,14 @@ const Links = [
 ];
 
 export const NavModule = () => {
+	const pathname = usePathname();
 	return (
 		<Module title={'STUFF'}>
 			<Flex direction={'column'}>
 				{Links.map((link) => (
 					<Link
 						className={
-							usePathname() === link.href ? classes.activelink : classes.link
+							pathname === link.href ? classes.activelink : classes.link
 						}
 						key={link.href}
 						href={link.href}
