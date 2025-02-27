@@ -1,0 +1,30 @@
+@import "/src/styles/_colors.scss";
+
+.musicboximg {
+    width: 80px;
+    height: 80px;
+    border-radius: 0.3vh;
+    border: 0.3vh solid #333;
+    box-shadow: 0 0 0.5vh 0.1vh #333;
+}
+
+.musicboximg:hover {
+    border: 0.3vh solid $main_color;
+    box-shadow: 0 0 0.5vh 0.1vh $main_color;
+}
+
+.text {
+    overflow: hidden;
+}
+
+.text p {
+    font-weight: bold;
+    text-wrap-mode: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.infotext p {
+    color: #333;
+}

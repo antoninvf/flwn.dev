@@ -1,0 +1,52 @@
+@import '/src/styles/_colors.scss';
+
+.text {
+	display: inline-block;
+	font-size: 5rem;
+	font-weight: 700;
+	line-height: normal;
+	color: #ffffff;
+	text-shadow: 0 0 10px #ffffff;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+
+	// disable all selection
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+}
+
+.text:hover {
+	color: $main_color;
+	animation: 1s ease-in-out 0s infinite alternate none running shake;
+	transform-origin: center;
+	transition: all 0.3s ease-in-out;
+	text-shadow: 0 0 10px $main_color;
+}
+
+$degrees: 2deg;
+$scale: 1.1;
+
+@keyframes shake {
+	0% {
+		transform: rotate(0deg) scale(1);
+	}
+
+	25% {
+		transform: rotate($degrees) scale($scale);
+	}
+
+	50% {
+		transform: rotate(-$degrees) scale($scale);
+	}
+
+	75% {
+		transform: rotate($degrees) scale($scale);
+	}
+
+	100% {
+		transform: rotate(0deg) scale($scale);
+	}
+}

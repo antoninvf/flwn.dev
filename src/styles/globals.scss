@@ -1,0 +1,50 @@
+@use '_colors.scss' as *;
+
+html,
+body {
+	max-width: 100vw;
+	overflow-x: hidden;
+	-ms-overflow-style: none;
+	/* IE and Edge */
+	scrollbar-width: none;
+	/* Firefox */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	margin: 0;
+	color: white;
+	background-color: rgb(3, 3, 3);
+	background-image: url('/img/stars.gif');
+	background-position: center;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	width: fit-content;
+	font-size: 1rem;
+}
+
+a:hover {
+	color: $main_color;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	border-radius: 0.3vh;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}

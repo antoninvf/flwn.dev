@@ -1,0 +1,38 @@
+.video {
+    height: 250px;
+    object-fit: fill;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    border: 0.3vh solid #333;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+
+}
+
+.paused {
+    height: 250px;
+    object-fit: fill;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 0.1rem solid white;
+    transition: all 0.2s;
+    transform: scale(0.8);
+    cursor: pointer;
+
+    opacity: 0.75;
+    filter: blur(0.1rem);
+
+    &:hover {
+        border: 0.3vh solid #333;
+        transform: scale(0.95);
+        transition: all 0.2s;
+        filter: none;
+        opacity: 1;
+    }
+}

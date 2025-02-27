@@ -1,0 +1,52 @@
+@import "/src/styles/_colors.scss";
+
+$glow_amount: 0.3vh;
+
+.h1 {
+	margin-top: 4vh;
+	margin-bottom: -1vh;
+	font-size: 5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Pixellari;
+	color: white;
+	font-weight: 700;
+}
+
+.title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Alagard;
+	color: $main_color;
+	margin: 0;
+	padding: 0;
+	margin-bottom: -1vh;
+}
+
+.subtitle {
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Pixellari;
+	color: $main_color;
+	margin: 0;
+	margin-bottom: -1vh;
+}
+
+.glow-white {
+	text-shadow: 0 0 $glow_amount white;
+}
+
+.glow-main {
+	text-shadow: 0 0 $glow_amount $main_color;
+}
+
+.module {
+	border: 0.3vh solid #333;
+	border-radius: 0.3vh;
+	background-color: black;
+	height: fit-content;
+	box-shadow: 0 0 0.5vh 0.1vh #333;
+	overflow: hidden;
+}
