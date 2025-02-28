@@ -5,12 +5,12 @@ import React, { type ReactNode } from 'react';
 import localFont from 'next/font/local';
 
 const pixellari = localFont({
-	src: '../../public/fonts/pixellari.ttf',
+	src: '..//../public/fonts/pixellari.ttf',
 	display: 'auto',
 });
 
 const alagard = localFont({
-	src: '../../public/fonts/alagard.ttf',
+	src: '..//../public/fonts/alagard.ttf',
 	display: 'auto',
 });
 
