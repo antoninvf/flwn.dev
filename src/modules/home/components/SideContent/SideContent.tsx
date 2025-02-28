@@ -17,6 +17,13 @@ export const SideContent = () => {
 				title="weed cat"
 				topText="Weed cat supremacy"
 				image={'/img/sprigspin.gif'}
+				onClick={() => {
+					const audio = new Audio(
+						'https://play.pokemonshowdown.com/audio/cries/sprigatito.mp3',
+					);
+					audio.volume = 0.2;
+					audio.play();
+				}}
 			/>
 			<Module>more stuff in the future</Module>
 		</Flex>
