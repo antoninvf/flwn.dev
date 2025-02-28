@@ -7,9 +7,15 @@ interface LogoProps {
 
 const sfx = [
 	{ name: 'boing.mp3', volume: 0.9 },
-	{ name: 'lala.mp3', volume: 0.5 },
-	{ name: 'jermastfu.mp3', volume: 0.8 },
-	{ name: 'another.mp3', volume: 0.5 },
+	{ name: 'boing2.mp3', volume: 0.9 },
+	{ name: 'boing3.mp3', volume: 0.9 },
+	{ name: 'boing4.mp3', volume: 0.9 },
+	{ name: 'punch.mp3', volume: 0.3 },
+	{ name: 'spring.mp3', volume: 0.7 },
+	{ name: 'lala.mp3', volume: 0.3 },
+	{ name: 'gnarp1.mp3', volume: 0.3 },
+	{ name: 'gnarp2.mp3', volume: 0.3 },
+	{ name: 'gnarp3.mp3', volume: 0.3 },
 ];
 
 export const Logo = ({ mt = '' }: LogoProps) => {
