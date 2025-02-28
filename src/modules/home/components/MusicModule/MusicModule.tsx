@@ -13,12 +13,12 @@ import { Module } from '../Module/Module';
 import { useQuery } from '@tanstack/react-query';
 import type { LastFmData } from '~/types/LastFmData';
 import { IconExclamationMark } from '@tabler/icons-react';
-import Router from 'next/router';
-import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { useDisclosure } from '@mantine/hooks';
 
 export const MusicModule = () => {
 	const [opened, { open: openModal, close: closeModal }] = useDisclosure(false);
+	const router = useRouter();
 
 	const { data } = useQuery({
 		queryKey: ['lastfm'],
@@ -82,7 +82,9 @@ export const MusicModule = () => {
 							src={data?.recenttracks.track[0].image[1]['#text']}
 							alt={data?.recenttracks.track[0].name + ' album cover'}
 							className={classes.musicboximg}
-							onClick={() => Router.push(data?.recenttracks.track[0].url || '')}
+							onClick={() =>
+								window.open(data?.recenttracks.track[0].url, '_blank')
+							}
 						/>
 
 						<Flex direction={'column'} className={classes.text}>
