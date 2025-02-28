@@ -1,12 +1,4 @@
-import {
-	Center,
-	Flex,
-	Grid,
-	Image,
-	SimpleGrid,
-	Text,
-	Title,
-} from '@mantine/core';
+import { Center, Flex, Image, Text } from '@mantine/core';
 import { Module } from '../Module/Module';
 import classes from '~/styles/Content.module.scss';
 import { Tooltip } from '@mantine/core';
@@ -22,6 +14,11 @@ export const MainContent = () => {
 							alt={'flwn'}
 							w={'10rem'}
 							className={classes.flwn}
+							onClick={() => {
+								const audio = new Audio('/sfx/lala.mp3');
+								audio.volume = 0.3;
+								audio.play();
+							}}
 						/>
 					</Tooltip>
 					<Flex direction={'column'} className={classes.text}>
