@@ -21,7 +21,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
 	title: 'flwn.dev',
 	description: 'my personal silly little website',
-	twitter: {
+	openGraph: {
 		images: 'https://flwn.dev/flwn.png',
 	},
 };
