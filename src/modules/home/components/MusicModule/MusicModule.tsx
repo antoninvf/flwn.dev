@@ -13,12 +13,10 @@ import { Module } from '../Module/Module';
 import { useQuery } from '@tanstack/react-query';
 import type { LastFmData } from '~/types/LastFmData';
 import { IconExclamationMark } from '@tabler/icons-react';
-import { useRouter } from 'next/navigation';
 import { useDisclosure } from '@mantine/hooks';
 
 export const MusicModule = () => {
 	const [opened, { open: openModal, close: closeModal }] = useDisclosure(false);
-	const router = useRouter();
 
 	const { data } = useQuery({
 		queryKey: ['lastfm'],
