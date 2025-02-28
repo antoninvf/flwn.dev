@@ -1,3 +1,4 @@
+'use client';
 import { Flex } from '@mantine/core';
 import classes from '~/styles/Content.module.scss';
 import { Module } from '../Module/Module';
