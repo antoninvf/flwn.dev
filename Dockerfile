@@ -1,4 +1,4 @@
-FROM node:22-alpine as BUILD_IMAGE
+FROM node:23-alpine as BUILD_IMAGE
 WORKDIR /app
 COPY package.json package-lock.json ./
 # install dependencies
@@ -7,7 +7,7 @@ COPY . .
 # build
 RUN npm run build
 
-FROM node:22-alpine
+FROM node:23-alpine
 WORKDIR /app
 # copy from build image
 COPY --from=BUILD_IMAGE /app/package.json ./package.json
