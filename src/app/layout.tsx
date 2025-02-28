@@ -24,6 +24,9 @@ export const metadata: Metadata = {
 	openGraph: {
 		images: 'https://flwn.dev/flwn.png',
 	},
+	twitter: {
+		images: '',
+	},
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
