@@ -31,7 +31,7 @@ export const MusicModule = () => {
 	});
 
 	var lastPlayedString = '';
-	if (data != null) {
+	if (data != null && data.recenttracks.track[0].date) {
 		// get the last played time
 		var lastPlayed = new Date(
 			Number(data.recenttracks.track[0].date.uts) * 1000,
@@ -57,6 +57,12 @@ export const MusicModule = () => {
 		} else {
 			lastPlayedString += `${seconds} second${seconds > 1 ? 's' : ''}`;
 		}
+
+		lastPlayedString += ' ago';
+	}
+
+	if (data != null && data.recenttracks.track[0]['@attr']?.nowplaying) {
+		lastPlayedString = 'Playing right now!';
 	}
 
 	return (
@@ -102,7 +108,7 @@ export const MusicModule = () => {
 				</Skeleton>
 				<Skeleton visible={!data} width={'auto'} height={'auto'} p={0} m={0}>
 					<Flex direction={'column'} className={classes.infotext}>
-						<Text>{lastPlayedString} ago</Text>
+						<Text>{lastPlayedString}</Text>
 						<Text>{data?.recenttracks['@attr'].total} total scrobbles</Text>
 					</Flex>
 				</Skeleton>

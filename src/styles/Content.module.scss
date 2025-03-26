@@ -1,4 +1,5 @@
 @use '_colors.scss' as *;
+@use 'sass:color';
 
 $glow_amount: 0.3vh;
 
@@ -55,13 +56,13 @@ $glow_amount: 0.3vh;
     font-size: 1.2rem;
     padding: 0;
     margin: 0;
-    color: mix($main_color, white, 50%);
+    color: color.mix($main_color, white, 50%);
     text-shadow: 0 0 $glow_amount $main_color;
 }
 
 .clickable {
     cursor: pointer;
-    color: mix($main_color, white, 50%);
+    color: color.mix($main_color, white, 50%);
 }
 
 .disabled {
