@@ -1,5 +1,20 @@
+@use 'sass:color';
+
+$main_color: #ff80ff;
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Alagard;
+    color: $main_color;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -1vh;
+}
+
 .video {
-    height: 250px;
+    width: 100%;
     object-fit: fill;
     border-radius: 0.3rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -11,18 +26,15 @@
     &:hover {
         transform: scale(1.05);
     }
-
-
 }
 
 .paused {
-    height: 250px;
     object-fit: fill;
     border-radius: 0.3rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 0.1rem solid white;
     transition: all 0.2s;
-    transform: scale(0.8);
+    transform: scale(0.9);
     cursor: pointer;
 
     opacity: 0.75;

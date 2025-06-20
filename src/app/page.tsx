@@ -8,7 +8,7 @@ export default function HomePage() {
 	return (
 		<Flex direction={'column'} align={'center'} w={'100%'} mb={'xl'}>
 			<Logo mt={'2rem'} />
-			<Flex w={'60%'} gap={'sm'}>
+			<Flex w={'fit-content'} maw={'65rem'} gap={'sm'}>
 				<MainContent />
 				<SideContent />
 			</Flex>

@@ -7,12 +7,12 @@ export const MainContent = () => {
 	return (
 		<Flex direction={'column'} w={'75%'} gap={'sm'}>
 			<Module title="WELCOME TO FLWN.DEV">
-				<Flex gap={'xl'} align={'center'}>
+				<Flex gap={'xl'} align={'start'} p={'xs'}>
 					<Tooltip label="the creature" withArrow position="bottom">
 						<Image
+							mt={'md'}
 							src={'/flwn.png'}
 							alt={'flwn'}
-							w={'10rem'}
 							className={classes.flwn}
 							onClick={() => {
 								const audio = new Audio('/sfx/lala.mp3');
@@ -26,19 +26,16 @@ export const MainContent = () => {
 						<Text>
 							I'm a software developer from Czechia that loves to code random
 							stuff.
+							<br /> I love coding in C# but was taught Java in high school and
+							that's mainly how I got into programming. I know C#, Java/Kotlin,
+							JavaScript/TypeScript and for web development I use React and
+							Next.js mostly.
 						</Text>
 						<Text>tl;dr welcome to my silly little website</Text>
 					</Flex>
 				</Flex>
 			</Module>
-			<Module>
-				<Center>isnt this website awesome????</Center>
-			</Module>
 			<Module title="BLOG">blog component here in the future</Module>
-			<Module>
-				<Text>⚠️ this website is still being worked on</Text>
-				<Text>it's being remade in nextjs :p</Text>
-			</Module>
 			<Module title="PROJECTS">
 				<Text>
 					Here is a selection of projects I liked working on the most, or

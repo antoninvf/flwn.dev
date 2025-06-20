@@ -16,6 +16,7 @@ const myColor: MantineColorsTuple = [
 ];
 
 export const theme = createTheme({
+	cursorType: 'pointer',
 	/* Put your mantine theme override here */
 	colors: {
 		myColor,

@@ -8,6 +8,7 @@ $glow_amount: 0.3vh;
     height: 100px;
     border: $main_color 0.3vh solid;
     filter: drop-shadow(0 0 0.5vh $main_color);
+    cursor: grab;
 }
 
 .title {
@@ -37,6 +38,7 @@ $glow_amount: 0.3vh;
     margin-top: 1vh;
     margin-bottom: 1vh;
     font-weight: bold;
+    text-align: justify;
 }
 
 .link {

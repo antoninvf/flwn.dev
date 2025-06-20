@@ -43,10 +43,11 @@ $glow_amount: 0.3vh;
 }
 
 .module {
-	border: 0.3vh solid #333;
-	border-radius: 0.3vh;
-	background-color: black;
+	border: 0.2rem solid #111;
+	border-radius: 0.3rem;
+	background-color: rgba(0, 0, 0, 0.75);
 	height: fit-content;
-	box-shadow: 0 0 0.5vh 0.1vh #333;
+	box-shadow: 0 0 0.5rem 0.1rem #111;
 	overflow: hidden;
+	transition: all 0.2s;
 }
