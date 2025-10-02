@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Friends = [
 	{ href: 'https://basil.florist', text: 'basil.florist' },
-	{ href: 'https://theouto.dev', text: 'theouto.dev' },
+	{ href: 'https://theouto.com', text: 'theouto.com' },
 	{ href: 'https://danielquail.dev', text: 'danielquail.dev' },
 	{ href: 'https://jonstu.dev', text: 'jonstu.dev' },
 	{ href: 'https://goodhew.lol', text: 'goodhew.lol' },
