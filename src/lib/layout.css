@@ -1,0 +1,62 @@
+@import '@fontsource/unifontex';
+
+:root {
+	--font-body: 'Unifontex', monospace;
+	--font-mono: monospace;
+	--color-text: #ff80ff;
+	--color-primary: color-mix(in srgb, var(--color-text) 67%, black);
+	--color-secondary: color-mix(in srgb, var(--color-text) 40%, black);
+	--color-tertiary: black;
+	--shadow-strength: 10px;
+
+	--color-bg: #111;
+
+	font-family: var(--font-body);
+	color: var(--color-text);
+	text-shadow: 0 0 var(--shadow-strength) var(--color-text);
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	background-attachment: fixed;
+	background-color: var(--color-bg);
+	background-size: 100vw 100vh;
+	border: 1px solid var(--color-text);
+}
+
+p,
+h1,
+h2,
+h3 {
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+p {
+	font-weight: 400;
+}
+
+a {
+	color: var(--color-primary);
+	text-shadow: 0 0 var(--shadow-strength) var(--color-primary);
+
+	&:hover,
+	&:active {
+		color: var(--color-secondary);
+		text-shadow: 0 0 var(--shadow-strength) var(--color-secondary);
+	}
+
+	&:active {
+		background-color: var(--color-secondary);
+	}
+}
+
+pre {
+	font-size: 16px;
+	font-family: var(--font-mono);
+	background-color: var(--color-bg);
+	color: var(--color-text);
+}
