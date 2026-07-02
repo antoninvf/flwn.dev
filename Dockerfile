@@ -8,7 +8,7 @@ ENV PATH=$PNPM_HOME:$PATH
 RUN corepack enable
 
 # Install deps (cache-friendly)
-COPY package.json pnpm-lock.yaml .npmrc ./
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 RUN pnpm install --frozen-lockfile
 
 # ---- build ----
@@ -35,7 +35,7 @@ ENV PATH=$PNPM_HOME:$PATH
 
 RUN corepack enable
 
-COPY package.json pnpm-lock.yaml .npmrc ./
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 RUN pnpm install --prod --frozen-lockfile
 
 # ---- run ----
