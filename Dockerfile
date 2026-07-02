@@ -8,7 +8,7 @@ ENV PATH=$PNPM_HOME:$PATH
 RUN corepack enable
 
 # Install deps (cache-friendly)
-COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc svelte.config.js ./
 RUN pnpm install --frozen-lockfile
 
 # ---- build ----
