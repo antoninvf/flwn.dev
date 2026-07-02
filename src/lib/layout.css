@@ -7,7 +7,7 @@
 	--color-primary: color-mix(in srgb, var(--color-text) 67%, black);
 	--color-secondary: color-mix(in srgb, var(--color-text) 40%, black);
 	--color-tertiary: black;
-	--shadow-strength: 10px;
+	--shadow-strength: 3px;
 
 	--color-bg: #111;
 
@@ -22,7 +22,7 @@ body {
 	background-attachment: fixed;
 	background-color: var(--color-bg);
 	background-size: 100vw 100vh;
-	border: 1px solid var(--color-text);
+	/*border: 1px solid var(--color-text);*/
 }
 
 p,
